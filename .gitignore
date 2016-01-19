@@ -1,0 +1,17 @@
+_site/*
+code/_site
+_theme_packages/*
+assets/js/instrument/out
+
+Thumbs.db
+.DS_Store
+
+!.gitkeep
+
+.rbenv-version
+.rvmrc
+
+*out/
+*.cljc
+*.cljs
+assets/js/cljs_next
