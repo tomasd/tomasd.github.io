@@ -31,7 +31,8 @@ Commands and events should be processed in multiple steps. E.g. validate command
 There are 2 layers of functions. Pure and side effecting. Side effecting functions changes persistent state in the store. In application business logic is represented as 1 function. All the routing is created by functional composition.
 
 Example
-```
+
+```java
 EsStateReducer<Person, State> sr = EsStateReducer.of(
                 Dispatch.cmd(Match
                         .whenType(CreatePerson.class)
@@ -50,8 +51,9 @@ sr.apply(eventStore, ctx, 1, new CreatePerson("Jane", "Doe"))
 sr.apply(eventStore, ctx, 1, new ChangeFirstName("John"));
 ```
 
-Implementation is on my github https://github.com/tomasd/state-reducer
+Implementation is on my <a href="https://github.com/tomasd/state-reducer">github</a>.
 
+<hr/>
 ## Command function
 
 One command can be processed in multiple steps, each generating 0..n events. Each step should introspect initial and current state.
@@ -97,6 +99,7 @@ f(
 
 Business logic should be represented as 1 function. As there are multiple commands, they need to be processes separately.
 
+<hr/>
 
 ## Event function
 
