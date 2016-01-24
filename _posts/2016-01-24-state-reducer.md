@@ -139,8 +139,9 @@ f(
    .
    predicateN, eventFunctionN
    )
-   
-   
+  
+<hr/>
+  
 ## State reducer
 
 State reducer is side effecting function applying command, generating and storing events into event store.
