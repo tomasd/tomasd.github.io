@@ -9,10 +9,10 @@ tags: [distributed-system]
 {{ page.title }}
 ================
 
-<p class="meta">13 Aug 2016</p>
+<p class="meta">12 Aug 2016</p>
 
 I've found very interesting lecture notes on distributed systems written by
-Kyle Kingsbury [https://github.com/aphyr/distsys-class].
+Kyle Kingsbury https://github.com/aphyr/distsys-class.
 
 Some of the best points:
 
@@ -124,7 +124,7 @@ When possible, try to use a single node instead of a distributed system. Accept 
       * Measure only what matters
         * Responding to requests is important
         * Node CPU doesn't matter as much
-        Key metrics for most systems
+        * Key metrics for most systems
           * Apdex: successful response WITHIN latency SLA
           * Latency profiles: 0, 0.5, 0.95, 0.99, 1
           * Overall throughput
